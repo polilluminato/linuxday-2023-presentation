@@ -1,16 +1,26 @@
-# linuxday2023_presentation
+<div align="center">
+  <h1>Linux Day 2023 Presentation</h1>
+</div>
 
-A new Flutter project.
+## 💎 Contributing
 
-## Getting Started
+If you have any idea, feel free to fork it and submit your changes back to me.
+Se hai una idea, sentiti libero di forkare il repo e mandarmi le tue modifiche, oppure apri una pull request o una issue.
 
-This project is a starting point for a Flutter application.
+## 📃 License
 
-A few resources to get you started if this is your first Flutter project:
+```
+Copyright 2023 Alberto Bonacina
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Concesso in licenza secondo la Licenza Apache, versione 2.0 (la "Licenza");
+l'utente non può utilizzare questo file se non in conformità con la Licenza.
+È possibile ottenere una copia della licenza all'indirizzo
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Se non richiesto dalla legge o concordato per iscritto, il software distribuito in base alla Licenza
+distribuito in base alla Licenza è distribuito "COSÌ COM'È",
+SENZA GARANZIE O CONDIZIONI DI ALCUN TIPO, né esplicite né implicite.
+Vedere la Licenza per il linguaggio specifico che regola le autorizzazioni e le limitazioni previste dalla Licenza.
+limitazioni previste dalla Licenza.
+```
