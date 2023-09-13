@@ -4,7 +4,6 @@
 
 ## 💎 Contributing
 
-If you have any idea, feel free to fork it and submit your changes back to me.
 Se hai una idea, sentiti libero di forkare il repo e mandarmi le tue modifiche, oppure apri una pull request o una issue.
 
 ## 📃 License
