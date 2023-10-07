@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:linuxday_2023_presentation/slides/ui/social_link.dart';
-import 'package:linuxday_2023_presentation/slides/ui/stat_card.dart';
 
-class FlutterQuestions extends FlutterDeckSlideWidget {
-  const FlutterQuestions()
+class QuestionsSlide extends FlutterDeckSlideWidget {
+  const QuestionsSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/questions',

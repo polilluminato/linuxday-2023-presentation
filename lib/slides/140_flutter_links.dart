@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:linuxday_2023_presentation/slides/ui/qrcode_link.dart';
 
-class FlutterLinksSlide extends FlutterDeckSlideWidget {
-  const FlutterLinksSlide()
+class LinksSlide extends FlutterDeckSlideWidget {
+  const LinksSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/links',

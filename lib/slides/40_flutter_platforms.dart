@@ -7,7 +7,7 @@ class FlutterPlatformsSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/flutter-platforms',
-            header: FlutterDeckHeaderConfiguration(title: 'Flutter Platforms'),
+            header: FlutterDeckHeaderConfiguration(title: 'Quali Piattaforme?'),
           ),
         );
 
