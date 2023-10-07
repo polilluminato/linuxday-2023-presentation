@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:linuxday_2023_presentation/styles/dimens.dart';
-import 'package:linuxday_2023_presentation/utils/utils.dart';
 
 class FlutterIntroSlide extends FlutterDeckSlideWidget {
   const FlutterIntroSlide()
@@ -28,9 +27,9 @@ class FlutterIntroSlide extends FlutterDeckSlideWidget {
               vertical: Dimens.mainMargin,
             ),
             child: Text(
-              'Framework open source di Google per la creazione '
-              'di applicazioni multipiattaforma compilate in modo '
-              'nativo da un\'unica base di codice',
+              'Framework open source di Google per la creazione di\n'
+              'applicazioni multipiattaforma compilate in modo '
+              'nativo\n da un\'unica base di codice',
               style: FlutterDeckTheme.of(context).textTheme.subtitle,
               textAlign: TextAlign.center,
             ),
