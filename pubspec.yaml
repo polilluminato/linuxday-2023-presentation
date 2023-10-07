@@ -10,16 +10,17 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_deck: ^0.4.2
+  flutter_deck: ^0.5.0
+  qr_flutter: ^4.1.0
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
 
   flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
 
 flutter:
   uses-material-design: true
 
   assets:
-     - assets/me.png
+    - assets/me.png
