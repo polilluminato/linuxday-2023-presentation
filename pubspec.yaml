@@ -24,4 +24,6 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/images/platforms/
+    - assets/images/social-icons/
     - assets/gifs/

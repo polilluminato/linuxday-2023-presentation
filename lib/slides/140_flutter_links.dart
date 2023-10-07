@@ -6,7 +6,7 @@ class FlutterLinksSlide extends FlutterDeckSlideWidget {
   const FlutterLinksSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
-            route: '/flutter-links',
+            route: '/links',
             header: FlutterDeckHeaderConfiguration(title: 'Links'),
           ),
         );
