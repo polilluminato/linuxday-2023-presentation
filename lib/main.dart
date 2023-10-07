@@ -7,6 +7,7 @@ import 'package:linuxday_2023_presentation/slides/10_about_me.dart';
 import 'package:linuxday_2023_presentation/slides/110_flutter_adaptive.dart';
 import 'package:linuxday_2023_presentation/slides/120_flutter_responsive.dart';
 import 'package:linuxday_2023_presentation/slides/130_flutter_dark_light.dart';
+import 'package:linuxday_2023_presentation/slides/135_questions.dart';
 import 'package:linuxday_2023_presentation/slides/140_flutter_links.dart';
 import 'package:linuxday_2023_presentation/slides/20_agenda.dart';
 import 'package:linuxday_2023_presentation/slides/30_flutter_intro.dart';
@@ -17,7 +18,6 @@ import 'package:linuxday_2023_presentation/slides/60_flutter_apps_example.dart';
 import 'package:linuxday_2023_presentation/slides/70_flutter_stats.dart';
 import 'package:linuxday_2023_presentation/slides/80_flutter_navigation.dart';
 import 'package:linuxday_2023_presentation/slides/90_flutter_ui_packages.dart';
-import 'package:linuxday_2023_presentation/slides/999_last_slide.dart';
 
 void main() {
   runApp(const LinuxDayPresentation());
@@ -79,8 +79,9 @@ class LinuxDayPresentation extends StatelessWidget {
         FlutterAdaptiveSlide(),
         FlutterResponsiveSlide(),
         FlutterDarkLighSlide(),
+        FlutterQuestions(),
         FlutterLinksSlide(),
-        LastSlide(),
+        //LastSlide(),
       ],
       speakerInfo: const FlutterDeckSpeakerInfo(
         name: 'Alberto Bonacina',
