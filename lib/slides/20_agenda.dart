@@ -13,7 +13,18 @@ class AgendaSlide extends FlutterDeckSlideWidget {
   @override
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.blank(
-      builder: (context) => const Text('Agenda'),
+      builder: (context) => FlutterDeckBulletList(
+        useSteps: false,
+        items: const [
+          'Introduzione a Flutter',
+          'Piattaforme supportate',
+          'Challenge e vantaggi',
+          'Navigazione e dimensione schermo',
+          'UI per Windows, macOS e Linux',
+          'Adaptive e Responsive',
+          'Demo'
+        ],
+      ),
     );
   }
 }

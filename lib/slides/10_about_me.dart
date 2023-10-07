@@ -6,14 +6,22 @@ class AboutMeSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/about-me',
-            header: FlutterDeckHeaderConfiguration(title: 'About me'),
+            header: FlutterDeckHeaderConfiguration(title: 'Chi sono'),
           ),
         );
 
   @override
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.blank(
-      builder: (context) => const Text('About me'),
+      builder: (context) => FlutterDeckBulletList(
+        useSteps: false,
+        items: const [
+          'Software Engineer @ Soluzione1 🧑‍💻',
+          'Flutter enthusiast 🩵',
+          'Free Software activist 🧾',
+          'Linux User 🐧',
+        ],
+      ),
     );
   }
 }

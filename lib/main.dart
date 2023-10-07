@@ -11,7 +11,8 @@ import 'package:linuxday_2023_presentation/slides/140_flutter_links.dart';
 import 'package:linuxday_2023_presentation/slides/20_agenda.dart';
 import 'package:linuxday_2023_presentation/slides/30_flutter_intro.dart';
 import 'package:linuxday_2023_presentation/slides/40_flutter_platforms.dart';
-import 'package:linuxday_2023_presentation/slides/50_flutter_challenge_advantage.dart';
+import 'package:linuxday_2023_presentation/slides/50_flutter_challenge.dart';
+import 'package:linuxday_2023_presentation/slides/55_flutter_advantage.dart';
 import 'package:linuxday_2023_presentation/slides/60_flutter_apps_example.dart';
 import 'package:linuxday_2023_presentation/slides/70_flutter_stats.dart';
 import 'package:linuxday_2023_presentation/slides/80_flutter_navigation.dart';
@@ -31,7 +32,7 @@ class LinuxDayPresentation extends StatelessWidget {
       lightTheme: FlutterDeckThemeData.fromTheme(
         ThemeData.from(
           colorScheme: ColorScheme.fromSeed(
-            seedColor: const Color(0xFFB5FFFC),
+            seedColor: const Color(0xFF00327C),
             brightness: Brightness.light,
           ),
           useMaterial3: true,
@@ -40,7 +41,7 @@ class LinuxDayPresentation extends StatelessWidget {
       darkTheme: FlutterDeckThemeData.fromTheme(
         ThemeData.from(
           colorScheme: ColorScheme.fromSeed(
-            seedColor: const Color(0xFF16222A),
+            seedColor: const Color(0xFF00327C),
             brightness: Brightness.dark,
           ),
           useMaterial3: true,
@@ -68,7 +69,8 @@ class LinuxDayPresentation extends StatelessWidget {
         AgendaSlide(),
         FlutterIntroSlide(),
         FlutterPlatformsSlide(),
-        FlutterChallengeAdvantageSlide(),
+        FlutterChallengeSlide(),
+        FlutterAdvantageSlide(),
         FlutterAppExampleSlide(),
         FlutterStatsSlide(),
         FlutterNavigationSlide(),
@@ -85,7 +87,7 @@ class LinuxDayPresentation extends StatelessWidget {
         description:
             'Proud Software Engineer, Flutter enthusiast and Free Software activist',
         socialHandle: '@polilluminato',
-        imagePath: 'assets/me.png',
+        imagePath: 'assets/images/me.png',
       ),
     );
   }
