@@ -6,7 +6,9 @@ class FlutterResponsiveSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/flutter-responsive',
-            header: FlutterDeckHeaderConfiguration(title: 'Flutter Responsive'),
+            header: FlutterDeckHeaderConfiguration(
+              title: 'Flutter Responsive',
+            ),
           ),
         );
 

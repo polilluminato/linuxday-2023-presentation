@@ -7,7 +7,9 @@ class QuestionsSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/questions',
-            header: FlutterDeckHeaderConfiguration(title: 'Domande?'),
+            header: FlutterDeckHeaderConfiguration(
+              title: 'Domande?',
+            ),
           ),
         );
 

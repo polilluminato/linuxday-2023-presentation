@@ -6,8 +6,9 @@ class FlutterChallengeSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/flutter-challenge',
-            header:
-                FlutterDeckHeaderConfiguration(title: 'Sfide Multipiattaforma'),
+            header: FlutterDeckHeaderConfiguration(
+              title: 'Sfide Multipiattaforma',
+            ),
           ),
         );
 

@@ -6,7 +6,9 @@ class FlutterNavigationSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/flutter-navigation',
-            header: FlutterDeckHeaderConfiguration(title: 'Flutter Navigation'),
+            header: FlutterDeckHeaderConfiguration(
+              title: 'Flutter Navigation',
+            ),
           ),
         );
 

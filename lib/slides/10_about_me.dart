@@ -6,7 +6,9 @@ class AboutMeSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/about-me',
-            header: FlutterDeckHeaderConfiguration(title: 'Chi sono'),
+            header: FlutterDeckHeaderConfiguration(
+              title: 'Presentazioni',
+            ),
           ),
         );
 

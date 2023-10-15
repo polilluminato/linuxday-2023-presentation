@@ -26,4 +26,5 @@ flutter:
     - assets/images/
     - assets/images/platforms/
     - assets/images/social-icons/
+    - assets/images/ubuntu-desktop/
     - assets/gifs/

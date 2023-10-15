@@ -6,7 +6,9 @@ class AgendaSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/agenda',
-            header: FlutterDeckHeaderConfiguration(title: 'Agenda'),
+            header: FlutterDeckHeaderConfiguration(
+              title: 'Agenda',
+            ),
           ),
         );
 

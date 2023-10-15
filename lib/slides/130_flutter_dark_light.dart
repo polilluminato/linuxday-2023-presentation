@@ -6,7 +6,9 @@ class FlutterDarkLighSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/flutter-dark-light',
-            header: FlutterDeckHeaderConfiguration(title: 'Flutter Dark Light'),
+            header: FlutterDeckHeaderConfiguration(
+              title: 'Flutter Dark Light',
+            ),
           ),
         );
 

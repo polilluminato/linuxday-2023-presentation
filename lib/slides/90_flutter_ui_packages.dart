@@ -6,8 +6,9 @@ class FlutterUIPackagesSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/flutter-ui-packages',
-            header:
-                FlutterDeckHeaderConfiguration(title: 'Flutter UI Packages'),
+            header: FlutterDeckHeaderConfiguration(
+              title: 'Flutter UI Packages',
+            ),
           ),
         );
 

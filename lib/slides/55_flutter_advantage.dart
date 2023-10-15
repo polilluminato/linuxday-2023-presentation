@@ -6,7 +6,9 @@ class FlutterAdvantageSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/flutter-advantage',
-            header: FlutterDeckHeaderConfiguration(title: 'Vantaggi Flutter'),
+            header: FlutterDeckHeaderConfiguration(
+              title: 'Vantaggi Flutter',
+            ),
           ),
         );
 

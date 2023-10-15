@@ -7,7 +7,9 @@ class FlutterStatsSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/flutter-stats',
-            header: FlutterDeckHeaderConfiguration(title: 'Flutter Stats'),
+            header: FlutterDeckHeaderConfiguration(
+              title: 'Flutter Stats',
+            ),
           ),
         );
 

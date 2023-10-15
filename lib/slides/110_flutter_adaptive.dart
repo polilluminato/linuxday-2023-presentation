@@ -6,7 +6,9 @@ class FlutterAdaptiveSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/flutter-adaptive',
-            header: FlutterDeckHeaderConfiguration(title: 'Flutter Adaptive'),
+            header: FlutterDeckHeaderConfiguration(
+              title: 'Flutter Adaptive',
+            ),
           ),
         );
 
