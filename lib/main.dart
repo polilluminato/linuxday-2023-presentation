@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_deck/flutter_deck.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:linuxday_2023_presentation/slides/0_first_slide.dart';
 import 'package:linuxday_2023_presentation/slides/100_flutter_window_management.dart';
 import 'package:linuxday_2023_presentation/slides/10_about_me.dart';
@@ -37,6 +38,7 @@ class LinuxDayPresentation extends StatelessWidget {
             brightness: Brightness.light,
           ),
           useMaterial3: true,
+          textTheme: GoogleFonts.ubuntuTextTheme(),
         ),
       ),
       darkTheme: FlutterDeckThemeData.fromTheme(
@@ -46,6 +48,7 @@ class LinuxDayPresentation extends StatelessWidget {
             brightness: Brightness.dark,
           ),
           useMaterial3: true,
+          textTheme: GoogleFonts.ubuntuTextTheme(),
         ),
       ),
       configuration: const FlutterDeckConfiguration(

@@ -7,14 +7,34 @@ class FlutterWindowManagementSlide extends FlutterDeckSlideWidget {
           configuration: const FlutterDeckSlideConfiguration(
             route: '/flutter-window-management',
             header: FlutterDeckHeaderConfiguration(
-                title: 'Flutter Window Management'),
+              title: 'Gestione finestra',
+            ),
           ),
         );
 
   @override
   FlutterDeckSlide build(BuildContext context) {
-    return FlutterDeckSlide.blank(
-      builder: (context) => const Text('Flutter Window Management'),
+    return FlutterDeckSlide.split(
+      leftBuilder: (context) => FlutterDeckBulletList(
+        useSteps: false,
+        items: const [
+          'Hide/Show',
+          'Resize',
+          'Maximize/Minimize',
+          'Fullscreen',
+          'Position',
+          'Opacity',
+          'Brightness',
+          'Alignment/Center'
+        ],
+      ),
+      rightBuilder: (context) => FractionallySizedBox(
+        widthFactor: 0.8,
+        child: Image.asset(
+          'assets/gifs/to-do.gif',
+          fit: BoxFit.contain,
+        ),
+      ),
     );
   }
 }

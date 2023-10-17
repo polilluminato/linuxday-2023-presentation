@@ -31,7 +31,7 @@ class FlutterAppExampleSlide extends FlutterDeckSlideWidget {
       rightBuilder: (context) => FractionallySizedBox(
         widthFactor: 1,
         child: Image.asset(
-          'assets/images/ubuntu-desktop/ubuntu-2310-app-center.jpg',
+          'assets/images/ubuntu-desktop/ubuntu-app-center.jpg',
           fit: BoxFit.contain,
         ),
       ),
