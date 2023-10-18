@@ -40,6 +40,10 @@ class QrCodeLink extends StatelessWidget {
           title,
           style: FlutterDeckTheme.of(context).textTheme.subtitle,
         ),
+        Text(
+          link,
+          style: FlutterDeckTheme.of(context).textTheme.bodyLarge,
+        ),
       ],
     );
   }
