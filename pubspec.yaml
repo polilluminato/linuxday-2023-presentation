@@ -1,5 +1,5 @@
 name: linuxday_2023_presentation
-description: A new Flutter project.
+description: Presentation for the Linux Day 2023 at Università Milano Bicocca
 publish_to: 'none'
 
 version: 1.0.0+1
@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_deck: ^0.5.0
+  flutter_deck: ^0.7.0
   google_fonts: ^6.1.0
   qr_flutter: ^4.1.0
   url_launcher: ^6.1.14
@@ -29,3 +29,4 @@ flutter:
     - assets/images/social-icons/
     - assets/images/ubuntu-desktop/
     - assets/gifs/
+    - assets/videos/
