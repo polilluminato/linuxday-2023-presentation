@@ -27,7 +27,7 @@ class FlutterAdvantageSlide extends FlutterDeckSlideWidget {
         ],
       ),
       rightBuilder: (context) => FractionallySizedBox(
-        widthFactor: 0.8,
+        widthFactor: 0.9,
         child: Image.asset(
           'assets/gifs/advantage.gif',
           fit: BoxFit.contain,

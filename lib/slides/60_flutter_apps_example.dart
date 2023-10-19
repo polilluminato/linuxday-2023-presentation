@@ -15,6 +15,7 @@ class FlutterAppExampleSlide extends FlutterDeckSlideWidget {
   @override
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.split(
+      splitRatio: const SplitSlideRatio(left: 2, right: 3),
       leftBuilder: (context) => FlutterDeckBulletList(
         useSteps: false,
         items: const [
@@ -24,7 +25,9 @@ class FlutterAppExampleSlide extends FlutterDeckSlideWidget {
           'eBay Motors',
           'Nubank',
           'Google Classroom',
-          'Ubuntu: Software Store, Installer, Firmware Upgrader',
+          'Ubuntu Software Store',
+          'Ubuntu Installer',
+          'Ubuntu Firmware Upgrader',
           '...'
         ],
       ),

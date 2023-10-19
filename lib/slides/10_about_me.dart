@@ -18,10 +18,10 @@ class AboutMeSlide extends FlutterDeckSlideWidget {
       builder: (context) => FlutterDeckBulletList(
         useSteps: false,
         items: const [
-          'Software Engineer @ Soluzione1 🧑‍💻',
-          'Flutter enthusiast 🩵',
-          'Free Software activist 🧾',
-          'Linux User 🐧',
+          'Software Engineer @ Soluzione1',
+          'Flutter enthusiast',
+          'Free Software activist',
+          'Linux User',
         ],
       ),
     );
