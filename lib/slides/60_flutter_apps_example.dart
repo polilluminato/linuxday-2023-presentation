@@ -7,7 +7,7 @@ class FlutterAppExampleSlide extends FlutterDeckSlideWidget {
           configuration: const FlutterDeckSlideConfiguration(
             route: '/flutter-apps-example',
             header: FlutterDeckHeaderConfiguration(
-              title: 'Applicazioni in Flutter',
+              title: 'Flutter Apps',
             ),
           ),
         );
