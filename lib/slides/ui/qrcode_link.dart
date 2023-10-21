@@ -8,21 +8,22 @@ class QrCodeLink extends StatelessWidget {
   const QrCodeLink({
     super.key,
     required this.link,
-    required this.title,
   });
 
   final String link;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(
-          height: getScreenHeight(context) * .1,
-        ),
         Container(
-          padding: const EdgeInsets.all(Dimens.mainPadding),
+          margin: const EdgeInsets.only(
+            top: Dimens.hugeMargin,
+            bottom: Dimens.mainMargin,
+          ),
+          padding: const EdgeInsets.all(
+            Dimens.mainPadding,
+          ),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(Dimens.mainRoundedCorner),
             color: Colors.white,
@@ -35,10 +36,6 @@ class QrCodeLink extends StatelessWidget {
         ),
         const SizedBox(
           height: Dimens.mainMargin,
-        ),
-        Text(
-          title,
-          style: FlutterDeckTheme.of(context).textTheme.subtitle,
         ),
         Text(
           link,

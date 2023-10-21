@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
+import 'package:linuxday_2023_presentation/slides/ui/qrcode_link.dart';
 import 'package:linuxday_2023_presentation/utils/utils.dart';
 
 class ThankYou extends FlutterDeckSlideWidget {
@@ -14,15 +15,20 @@ class ThankYou extends FlutterDeckSlideWidget {
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.split(
       leftBuilder: (context) {
-        return Padding(
-          padding: EdgeInsets.only(left: getScreenWidth(context) * .05),
-          child: Text(
-            'Happy Flutter!!!',
-            style: FlutterDeckTheme.of(context)
-                .textTheme
-                .header
-                .copyWith(fontSize: 100),
-          ),
+        return Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'Happy Flutter!!!',
+              style: FlutterDeckTheme.of(context)
+                  .textTheme
+                  .header
+                  .copyWith(fontSize: 64),
+            ),
+            const QrCodeLink(
+              link: "https://bit.ly/ldmi2023-flutter-slides",
+            )
+          ],
         );
       },
       rightBuilder: (context) => FractionallySizedBox(
