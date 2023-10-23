@@ -5,7 +5,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:linuxday_2023_presentation/slides/0_first_slide.dart';
 import 'package:linuxday_2023_presentation/slides/100_flutter_window_management.dart';
 import 'package:linuxday_2023_presentation/slides/10_about_me.dart';
-import 'package:linuxday_2023_presentation/slides/110_flutter_adaptive.dart';
 import 'package:linuxday_2023_presentation/slides/120_flutter_responsive.dart';
 import 'package:linuxday_2023_presentation/slides/130_flutter_dark_light.dart';
 import 'package:linuxday_2023_presentation/slides/135_questions.dart';
@@ -79,7 +78,6 @@ class LinuxDayPresentation extends StatelessWidget {
         FlutterNavigationSlide(),
         FlutterUIPackagesSlide(),
         FlutterWindowManagementSlide(),
-        FlutterAdaptiveSlide(),
         FlutterResponsiveSlide(),
         FlutterDarkLighSlide(),
         QuestionsSlide(),
