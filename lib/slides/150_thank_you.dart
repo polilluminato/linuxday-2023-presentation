@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:linuxday_2023_presentation/slides/ui/qrcode_link.dart';
-import 'package:linuxday_2023_presentation/utils/utils.dart';
 
 class ThankYou extends FlutterDeckSlideWidget {
   const ThankYou()

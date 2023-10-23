@@ -14,7 +14,7 @@ class FirstSlide extends FlutterDeckSlideWidget {
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.title(
       title: 'Flutter for the win',
-      subtitle: 'Sviluppo Cross-Platform alla massima potenza',
+      subtitle: 'Sviluppo Cross Platform alla massima potenza',
     );
   }
 }
