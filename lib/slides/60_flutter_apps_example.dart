@@ -19,20 +19,20 @@ class FlutterAppExampleSlide extends FlutterDeckSlideWidget {
       leftBuilder: (context) => FlutterDeckBulletList(
         useSteps: false,
         items: const [
+          'Ubuntu Software Store',
+          'Ubuntu Installer',
+          'Ubuntu Firmware Upgrader',
           'BMW Companion App',
           'Google Pay',
           'Google Earth',
           'eBay Motors',
           'Nubank',
           'Google Classroom',
-          'Ubuntu Software Store',
-          'Ubuntu Installer',
-          'Ubuntu Firmware Upgrader',
           '...'
         ],
       ),
       rightBuilder: (context) => FractionallySizedBox(
-        widthFactor: 1,
+        widthFactor: .9,
         child: Image.asset(
           'assets/images/ubuntu-desktop/ubuntu-app-center.jpg',
           fit: BoxFit.contain,

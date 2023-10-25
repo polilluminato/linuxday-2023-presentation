@@ -33,7 +33,7 @@ class FlutterDarkLighSlide extends FlutterDeckSlideWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           FractionallySizedBox(
-            widthFactor: 1,
+            widthFactor: .9,
             child: Image.asset(
               'assets/videos/accent-color-theme-switch.gif',
               fit: BoxFit.contain,

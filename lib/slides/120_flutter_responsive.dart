@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
+import 'package:linuxday_2023_presentation/slides/ui/ui_responsive_package.dart';
 import 'package:linuxday_2023_presentation/styles/dimens.dart';
 import 'package:linuxday_2023_presentation/utils/utils.dart' as utils;
 import 'package:wolt_modal_sheet/wolt_modal_sheet.dart';
@@ -17,116 +18,99 @@ class FlutterResponsiveSlide extends FlutterDeckSlideWidget {
 
   @override
   FlutterDeckSlide build(BuildContext context) {
-    return FlutterDeckSlide.split(leftBuilder: (context) {
-      return Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(bottom: Dimens.mainPadding),
-            child: Text(
-              "wolt_modal_sheet",
-              style: FlutterDeckTheme.of(context).textTheme.bodyLarge,
-              textAlign: TextAlign.start,
+    return FlutterDeckSlide.split(
+        splitRatio: const SplitSlideRatio(left: 2, right: 3),
+        leftBuilder: (context) => Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const UiResponsivePackage(
+                  package: "wolt_modal_sheet",
+                  padding: EdgeInsets.only(
+                    top: Dimens.mainPadding,
+                    bottom: Dimens.mainPadding,
+                  ),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    WoltModalSheet.show<void>(
+                      context: context,
+                      pageListBuilder: (modalSheetContext) {
+                        final textTheme = Theme.of(context).textTheme;
+                        return [
+                          page1(modalSheetContext, textTheme),
+                        ];
+                      },
+                      modalTypeBuilder: (context) {
+                        final size = MediaQuery.of(context).size.width;
+                        if (size < 600) {
+                          return WoltModalType.bottomSheet;
+                        } else {
+                          return WoltModalType.dialog;
+                        }
+                      },
+                      onModalDismissedWithBarrierTap: () {
+                        Navigator.of(context).pop();
+                      },
+                      maxDialogWidth: 560,
+                      minDialogWidth: 400,
+                      minPageHeight: 0.0,
+                      maxPageHeight: 0.9,
+                    );
+                  },
+                  child: const Text("Mostra Modal"),
+                ),
+                const UiResponsivePackage(
+                  package: "wolt_responsive_layout_grid",
+                  padding: EdgeInsets.only(top: Dimens.hugePadding * 5),
+                ),
+                const UiResponsivePackage(
+                  package: "responsive_builder",
+                  padding: EdgeInsets.only(top: Dimens.mainPadding),
+                ),
+                const UiResponsivePackage(
+                  package: "responsive_framework",
+                  padding: EdgeInsets.only(top: Dimens.mainPadding),
+                ),
+                const UiResponsivePackage(
+                  package: "adaptive_breakpoints",
+                  padding: EdgeInsets.only(top: Dimens.mainPadding),
+                ),
+              ],
             ),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              WoltModalSheet.show<void>(
-                context: context,
-                pageListBuilder: (modalSheetContext) {
-                  final textTheme = Theme.of(context).textTheme;
-                  return [
-                    page1(modalSheetContext, textTheme),
-                  ];
-                },
-                modalTypeBuilder: (context) {
-                  final size = MediaQuery.of(context).size.width;
-                  if (size < 600) {
-                    return WoltModalType.bottomSheet;
-                  } else {
-                    return WoltModalType.dialog;
-                  }
-                },
-                onModalDismissedWithBarrierTap: () {
-                  Navigator.of(context).pop();
-                },
-                maxDialogWidth: 560,
-                minDialogWidth: 400,
-                minPageHeight: 0.0,
-                maxPageHeight: 0.9,
-              );
-            },
-            child: const Text("Mostra Modal"),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(top: Dimens.hugePadding * 5),
-            child: Text(
-              "wolt_responsive_layout_grid",
-              style: FlutterDeckTheme.of(context).textTheme.bodyLarge,
-              textAlign: TextAlign.start,
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(top: Dimens.mainPadding),
-            child: Text(
-              "responsive_builder",
-              style: FlutterDeckTheme.of(context).textTheme.bodyLarge,
-              textAlign: TextAlign.start,
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(top: Dimens.mainPadding),
-            child: Text(
-              "responsive_framework",
-              style: FlutterDeckTheme.of(context).textTheme.bodyLarge,
-              textAlign: TextAlign.start,
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(top: Dimens.mainPadding),
-            child: Text(
-              "adaptive_breakpoints",
-              style: FlutterDeckTheme.of(context).textTheme.bodyLarge,
-              textAlign: TextAlign.start,
-            ),
-          ),
-        ],
-      );
-    }, rightBuilder: (context) {
-      String repoLinkResponsiveGridView =
-          "https://github.com/polilluminato/simple-flutter-gridview";
+        rightBuilder: (context) {
+          String repoLinkResponsiveGridView =
+              "https://github.com/polilluminato/simple-flutter-gridview";
 
-      return Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(bottom: Dimens.mainPadding),
-            child: Text(
-              "flutter_staggered_grid_view",
-              style: FlutterDeckTheme.of(context).textTheme.bodyLarge,
-              textAlign: TextAlign.start,
-            ),
-          ),
-          FractionallySizedBox(
-            widthFactor: 1,
-            child: Image.asset(
-              'assets/videos/responsive-gridview.gif',
-              fit: BoxFit.contain,
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(top: Dimens.mainPadding),
-            child: InkWell(
-              onTap: () => utils.launchURL(repoLinkResponsiveGridView),
-              child: Text(
-                repoLinkResponsiveGridView,
-                style: FlutterDeckTheme.of(context).textTheme.bodyMedium,
+          return Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const UiResponsivePackage(
+                package: "flutter_staggered_grid_view",
+                padding: EdgeInsets.only(
+                  top: Dimens.mainPadding,
+                  bottom: Dimens.mainPadding,
+                ),
               ),
-            ),
-          )
-        ],
-      );
-    });
+              FractionallySizedBox(
+                widthFactor: .9,
+                child: Image.asset(
+                  'assets/videos/responsive-gridview.gif',
+                  fit: BoxFit.contain,
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: Dimens.mainPadding),
+                child: InkWell(
+                  onTap: () => utils.launchURL(repoLinkResponsiveGridView),
+                  child: Text(
+                    repoLinkResponsiveGridView,
+                    style: FlutterDeckTheme.of(context).textTheme.bodyMedium,
+                  ),
+                ),
+              )
+            ],
+          );
+        });
   }
 
   WoltModalSheetPage page1(

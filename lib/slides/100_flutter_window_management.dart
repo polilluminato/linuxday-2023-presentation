@@ -38,7 +38,7 @@ class FlutterWindowManagementSlide extends FlutterDeckSlideWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           FractionallySizedBox(
-            widthFactor: 1,
+            widthFactor: .9,
             child: Image.asset(
               'assets/videos/window-manager-demo.gif',
               fit: BoxFit.contain,

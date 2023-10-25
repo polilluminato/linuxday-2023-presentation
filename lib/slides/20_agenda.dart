@@ -18,12 +18,12 @@ class AgendaSlide extends FlutterDeckSlideWidget {
       builder: (context) => FlutterDeckBulletList(
         useSteps: false,
         items: const [
-          'Introduzione a Flutter',
+          'Cosa è Flutter?',
           'Piattaforme supportate',
           'Challenge e vantaggi',
-          'Navigazione e dimensione schermo',
-          'UI per Windows, macOS e Linux',
-          'Adaptive e Responsive',
+          'Navigazione, gestione finestra, responsive',
+          'UI per Linux, Android, iOS, Windows, macOS e Web',
+          'Temi e dark/light mode',
           'Demo'
         ],
       ),

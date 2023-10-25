@@ -25,11 +25,13 @@ class QuestionsSlide extends FlutterDeckSlideWidget {
             children: [
               SocialLink(
                 icon: 'assets/images/social-icons/github.png',
-                link: '@polilluminato',
+                label: '@polilluminato',
+                link: 'https://github.com/polilluminato',
               ),
               SocialLink(
                 icon: 'assets/images/social-icons/linkedin.png',
-                link: 'linkedin.com/in/bonacinaalberto/',
+                label: 'linkedin.com/in/bonacinaalberto/',
+                link: 'https://www.linkedin.com/in/bonacinaalberto/',
               ),
             ],
           ),
@@ -38,11 +40,13 @@ class QuestionsSlide extends FlutterDeckSlideWidget {
             children: [
               SocialLink(
                 icon: 'assets/images/social-icons/twitter.png',
-                link: '@polilluminato',
+                label: '@polilluminato',
+                link: 'https://twitter.com/polilluminato',
               ),
               SocialLink(
                 icon: 'assets/images/social-icons/mastodon.png',
-                link: '@polilluminato@fluttercommunity.social',
+                label: '@polilluminato@fluttercommunity.social',
+                link: 'https://fluttercommunity.social/@polilluminato',
               ),
             ],
           ),
@@ -51,11 +55,12 @@ class QuestionsSlide extends FlutterDeckSlideWidget {
             children: [
               SocialLink(
                 icon: 'assets/images/social-icons/website.png',
-                link: 'albertobonacina.com',
+                label: 'albertobonacina.com',
+                link: 'https://albertobonacina.com/',
               ),
               SocialLink(
                 icon: 'assets/images/social-icons/mail.png',
-                link: 'bonacina.alberto@gmail.com',
+                label: 'bonacina.alberto@gmail.com',
               ),
             ],
           )

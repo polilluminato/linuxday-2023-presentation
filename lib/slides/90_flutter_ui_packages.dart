@@ -21,18 +21,18 @@ class FlutterUIPackagesSlide extends FlutterDeckSlideWidget {
         mainAxisSize: MainAxisSize.max,
         children: [
           UiPackageRow(
+            platform: 'Linux',
+            package: 'yaru_widgets',
+            link: 'https://pub.dev/packages/yaru_widgets',
+            demo: 'https://ubuntu.github.io/yaru_widgets.dart/',
+          ),
+          UiPackageRow(
             platform: 'Android',
             package: 'material',
           ),
           UiPackageRow(
             platform: 'iOS',
             package: 'cupertino',
-          ),
-          UiPackageRow(
-            platform: 'Linux',
-            package: 'yaru_widgets',
-            link: 'https://pub.dev/packages/yaru_widgets',
-            demo: 'https://ubuntu.github.io/yaru_widgets.dart/',
           ),
           UiPackageRow(
             platform: 'Windows',

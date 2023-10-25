@@ -15,7 +15,7 @@ import 'package:linuxday_2023_presentation/slides/40_flutter_platforms.dart';
 import 'package:linuxday_2023_presentation/slides/50_flutter_challenge.dart';
 import 'package:linuxday_2023_presentation/slides/55_flutter_advantage.dart';
 import 'package:linuxday_2023_presentation/slides/60_flutter_apps_example.dart';
-import 'package:linuxday_2023_presentation/slides/70_flutter_stats.dart';
+import 'package:linuxday_2023_presentation/slides/57_flutter_stats.dart';
 import 'package:linuxday_2023_presentation/slides/80_flutter_navigation.dart';
 import 'package:linuxday_2023_presentation/slides/90_flutter_ui_packages.dart';
 
@@ -73,8 +73,8 @@ class LinuxDayPresentation extends StatelessWidget {
         FlutterPlatformsSlide(),
         FlutterChallengeSlide(),
         FlutterAdvantageSlide(),
-        FlutterAppExampleSlide(),
         FlutterStatsSlide(),
+        FlutterAppExampleSlide(),
         FlutterNavigationSlide(),
         FlutterUIPackagesSlide(),
         FlutterWindowManagementSlide(),

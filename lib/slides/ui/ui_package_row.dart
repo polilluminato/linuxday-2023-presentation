@@ -36,9 +36,10 @@ class UiPackageRow extends StatelessWidget {
           style: FlutterDeckTheme.of(context).textTheme.subtitle,
         ),
         if (demo != null)
-          ElevatedButton(
+          ElevatedButton.icon(
             onPressed: () => utils.launchURL(demo!),
-            child: const Text("Demo"),
+            label: const Text("Demo"),
+            icon: const Icon(Icons.link),
           ),
         if (demo == null)
           const SizedBox(
