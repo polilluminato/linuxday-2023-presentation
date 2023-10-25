@@ -16,22 +16,23 @@ La presentazione è stata sviluppata con il package: [flutter_deck](https://pub.
 
 #### Abstract 
 
-Flutter si sta sempre più affermando come una soluzione completa per creare app Cross-Platform di alta qualità per le principali piattaforme: Android, iOS, Web, Windows, macOS e Linux. Questa presentazione esplorerà le caratteristiche chiave di Flutter e come queste si traducano in vantaggi tangibili per gli sviluppatori e le aziende.
+> Flutter si sta sempre più affermando come una soluzione completa per creare app Cross-Platform di alta qualità per le principali piattaforme: Android, iOS, Web, Windows, macOS e Linux. Questa presentazione esplorerà le caratteristiche chiave di Flutter e come queste si traducano in vantaggi tangibili per gli sviluppatori e le aziende.
+>Dopo una iniziale panoramica di base di Flutter, in cui verrà spiegato cosa lo rende unico, verranno esaminati i suoi principarli vantaggi: sviluppo cross-platform per 6 piattaforme differenti, la rapida iterazione con l'Hot Reload, un'unica base di codice e creazione di interfacce utente altamente personalizzabili.
+>Verranno poi presentate le principali librerie e best practice per realizzare la propria app Cross-Platform tenendo conto delle specifiche caratteristiche delle piattaforme, l'esperienza d'uso e il look and feel che l'utente di aspetta.
 
-Dopo una iniziale panoramica di base di Flutter, in cui verrà spiegato cosa lo rende unico, verranno esaminati i suoi principarli vantaggi: sviluppo cross-platform per 6 piattaforme differenti, la rapida iterazione con l'Hot Reload, un'unica base di codice e creazione di interfacce utente altamente personalizzabili.
-
-Verranno poi presentate le principali librerie e best practice per realizzare la propria app Cross-Platform tenendo conto delle specifiche caratteristiche delle piattaforme, l'esperienza d'uso e il look and feel che l'utente di aspetta.
-
-## Demo
+## Official Demo
 
 * *yaru_widgets* [[repo](https://pub.dev/packages/yaru_widgets)][[demo](https://ubuntu.github.io/yaru_widgets.dart/)]: a set of convenient widgets made with material.dart to easily build desktop and web applications. Design references are the Ubuntu Yaru theme suite and the Vanilla framework by Canonical
 * *fluent_ui* [[repo](https://pub.dev/packages/fluent_ui)][[demo](https://bdlukaa.github.io/fluent_ui/)]: unofficial implementation of Fluent UI for Flutter, it's written based on the official documentation
 * *macos_ui* [[repo](https://pub.dev/packages/macos_ui)][[demo](https://macosui.github.io/macos_ui/)]: Flutter widgets and themes implementing the current macOS design language
+
+## My Apps Demo
+
 * *simple-flutter-resizewindow* [[repo](https://github.com/polilluminato/simple-flutter-resizewindow)]: simple Flutter desktop app to demonstrate how to resize the app Window
 * *simple-flutter-gridview* [[repo](https://github.com/polilluminato/simple-flutter-gridview)]: simple Flutter app to show a responsive gridView
 * *theme-accent-color-switch-flutter* [[repo](https://github.com/polilluminato/theme-accent-color-switch-flutter)]: demo application for managing the switch between dark/light theme and accent color with Riverpod and Flutter
 
-## Packages
+## Package 
 
 * [wolt_modal_sheet](https://pub.dev/packages/wolt_modal_sheet): this package provides a responsive modal with multiple pages, motion animation for page transitions, and scrollable content within each page.
 * [wolt_responsive_layout_grid](https://pub.dev/packages/wolt_responsive_layout_grid): Wolt Responsive Layout Grid library helps you to create dynamic, adaptive grid layouts that seamlessly adjust to various screen sizes.
