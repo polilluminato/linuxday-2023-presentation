@@ -7,15 +7,31 @@ class FlutterNavigationSlide extends FlutterDeckSlideWidget {
           configuration: const FlutterDeckSlideConfiguration(
             route: '/flutter-navigation',
             header: FlutterDeckHeaderConfiguration(
-              title: 'Flutter Navigation',
+              title: 'Navigazione',
             ),
           ),
         );
 
   @override
   FlutterDeckSlide build(BuildContext context) {
-    return FlutterDeckSlide.blank(
-      builder: (context) => const Text('Flutter Navigation'),
+    return FlutterDeckSlide.split(
+      splitRatio: const SplitSlideRatio(left: 2, right: 3),
+      leftBuilder: (context) => FlutterDeckBulletList(
+        useSteps: false,
+        items: const ['TODO'],
+      ),
+      rightBuilder: (context) => Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          FractionallySizedBox(
+            widthFactor: .9,
+            child: Image.asset(
+              'assets/videos/change-navigation-responsive.gif',
+              fit: BoxFit.contain,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

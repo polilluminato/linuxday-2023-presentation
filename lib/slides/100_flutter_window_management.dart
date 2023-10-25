@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
+import 'package:linuxday_2023_presentation/slides/ui/ui_link_row.dart';
 import 'package:linuxday_2023_presentation/styles/dimens.dart';
 import 'package:linuxday_2023_presentation/utils/utils.dart' as utils;
 
@@ -44,16 +45,15 @@ class FlutterWindowManagementSlide extends FlutterDeckSlideWidget {
               fit: BoxFit.contain,
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(top: Dimens.mainPadding),
-            child: InkWell(
-              onTap: () => utils.launchURL(repoLink),
-              child: Text(
-                repoLink,
-                style: FlutterDeckTheme.of(context).textTheme.bodyMedium,
-              ),
+          UiLinkRow(
+            label: repoLink,
+            padding: const EdgeInsets.only(
+              top: Dimens.mainPadding,
+              bottom: Dimens.mainPadding,
             ),
-          )
+            link: repoLink,
+            textStyle: FlutterDeckTheme.of(context).textTheme.bodyMedium,
+          ),
         ],
       ),
     );

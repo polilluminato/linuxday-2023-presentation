@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
-import 'package:linuxday_2023_presentation/slides/ui/ui_responsive_package.dart';
+import 'package:linuxday_2023_presentation/slides/ui/ui_link_row.dart';
 import 'package:linuxday_2023_presentation/styles/dimens.dart';
 import 'package:linuxday_2023_presentation/utils/utils.dart' as utils;
 import 'package:wolt_modal_sheet/wolt_modal_sheet.dart';
@@ -23,12 +23,14 @@ class FlutterResponsiveSlide extends FlutterDeckSlideWidget {
         leftBuilder: (context) => Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const UiResponsivePackage(
-                  package: "wolt_modal_sheet",
-                  padding: EdgeInsets.only(
+                UiLinkRow(
+                  label: "wolt_modal_sheet",
+                  padding: const EdgeInsets.only(
                     top: Dimens.mainPadding,
                     bottom: Dimens.mainPadding,
                   ),
+                  link: "https://pub.dev/packages/wolt_modal_sheet",
+                  textStyle: FlutterDeckTheme.of(context).textTheme.bodyLarge,
                 ),
                 ElevatedButton(
                   onPressed: () {
@@ -59,37 +61,47 @@ class FlutterResponsiveSlide extends FlutterDeckSlideWidget {
                   },
                   child: const Text("Mostra Modal"),
                 ),
-                const UiResponsivePackage(
-                  package: "wolt_responsive_layout_grid",
-                  padding: EdgeInsets.only(top: Dimens.hugePadding * 5),
+                UiLinkRow(
+                  label: "wolt_responsive_layout_grid",
+                  padding: const EdgeInsets.only(top: Dimens.hugePadding * 5),
+                  link: "https://pub.dev/packages/wolt_responsive_layout_grid",
+                  textStyle: FlutterDeckTheme.of(context).textTheme.bodyLarge,
                 ),
-                const UiResponsivePackage(
-                  package: "responsive_builder",
-                  padding: EdgeInsets.only(top: Dimens.mainPadding),
+                UiLinkRow(
+                  label: "responsive_builder",
+                  padding: const EdgeInsets.only(top: Dimens.mainPadding),
+                  link: "https://pub.dev/packages/responsive_builder",
+                  textStyle: FlutterDeckTheme.of(context).textTheme.bodyLarge,
                 ),
-                const UiResponsivePackage(
-                  package: "responsive_framework",
-                  padding: EdgeInsets.only(top: Dimens.mainPadding),
+                UiLinkRow(
+                  label: "responsive_framework",
+                  padding: const EdgeInsets.only(top: Dimens.mainPadding),
+                  link: "https://pub.dev/packages/responsive_framework",
+                  textStyle: FlutterDeckTheme.of(context).textTheme.bodyLarge,
                 ),
-                const UiResponsivePackage(
-                  package: "adaptive_breakpoints",
-                  padding: EdgeInsets.only(top: Dimens.mainPadding),
+                UiLinkRow(
+                  label: "adaptive_breakpoints",
+                  padding: const EdgeInsets.only(top: Dimens.mainPadding),
+                  link: "https://pub.dev/packages/adaptive_breakpoints",
+                  textStyle: FlutterDeckTheme.of(context).textTheme.bodyLarge,
                 ),
               ],
             ),
         rightBuilder: (context) {
-          String repoLinkResponsiveGridView =
+          String repoLink =
               "https://github.com/polilluminato/simple-flutter-gridview";
 
           return Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const UiResponsivePackage(
-                package: "flutter_staggered_grid_view",
-                padding: EdgeInsets.only(
+              UiLinkRow(
+                label: "flutter_staggered_grid_view",
+                padding: const EdgeInsets.only(
                   top: Dimens.mainPadding,
                   bottom: Dimens.mainPadding,
                 ),
+                link: "https://pub.dev/packages/flutter_staggered_grid_view",
+                textStyle: FlutterDeckTheme.of(context).textTheme.bodyLarge,
               ),
               FractionallySizedBox(
                 widthFactor: .9,
@@ -98,16 +110,15 @@ class FlutterResponsiveSlide extends FlutterDeckSlideWidget {
                   fit: BoxFit.contain,
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: Dimens.mainPadding),
-                child: InkWell(
-                  onTap: () => utils.launchURL(repoLinkResponsiveGridView),
-                  child: Text(
-                    repoLinkResponsiveGridView,
-                    style: FlutterDeckTheme.of(context).textTheme.bodyMedium,
-                  ),
+              UiLinkRow(
+                label: repoLink,
+                padding: const EdgeInsets.only(
+                  top: Dimens.mainPadding,
+                  bottom: Dimens.mainPadding,
                 ),
-              )
+                link: repoLink,
+                textStyle: FlutterDeckTheme.of(context).textTheme.bodyMedium,
+              ),
             ],
           );
         });
