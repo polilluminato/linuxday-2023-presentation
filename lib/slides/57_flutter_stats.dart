@@ -35,9 +35,9 @@ class FlutterStatsSlide extends FlutterDeckSlideWidget {
                 company: "Google Pay",
               ),
               StatCard(
-                percentage: "90%",
-                label: "codice multipiattaforma",
-                company: "Tencent",
+                percentage: "100%",
+                label: "feature parity",
+                company: "Push",
               ),
             ],
           ),
@@ -59,6 +59,27 @@ class FlutterStatsSlide extends FlutterDeckSlideWidget {
                 percentage: "80%",
                 label: "miglioramento efficienza nel debug",
                 company: "Tencent",
+              ),
+            ],
+          ),
+          Row(
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              StatCard(
+                percentage: "66%",
+                label: "riduzione base di codice",
+                company: "Google Classroom",
+              ),
+              StatCard(
+                percentage: "77%",
+                label: "incremento velocità sviluppo",
+                company: "Tencent Cloud Chat",
+              ),
+              StatCard(
+                percentage: "350%",
+                label: "aumento delle impression",
+                company: "Sua Musica",
               ),
             ],
           )

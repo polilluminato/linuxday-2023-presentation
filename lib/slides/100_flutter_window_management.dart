@@ -37,6 +37,15 @@ class FlutterWindowManagementSlide extends FlutterDeckSlideWidget {
       rightBuilder: (context) => Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          UiLinkRow(
+            label: "window_manager",
+            padding: const EdgeInsets.only(
+              top: Dimens.mainPadding,
+              bottom: Dimens.mainPadding,
+            ),
+            link: "https://pub.dev/packages/window_manager",
+            textStyle: FlutterDeckTheme.of(context).textTheme.bodyLarge,
+          ),
           FractionallySizedBox(
             widthFactor: .9,
             child: Image.asset(

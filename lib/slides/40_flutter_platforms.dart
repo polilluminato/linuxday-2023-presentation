@@ -25,16 +25,16 @@ class FlutterPlatformsSlide extends FlutterDeckSlideWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               PlatformCard(
+                image: 'assets/images/platforms/linux.png',
+                label: 'Linux',
+              ),
+              PlatformCard(
                 image: 'assets/images/platforms/android.png',
                 label: 'Android',
               ),
               PlatformCard(
                 image: 'assets/images/platforms/ios.png',
                 label: 'iOS',
-              ),
-              PlatformCard(
-                image: 'assets/images/platforms/web.png',
-                label: 'Web',
               ),
             ],
           ),
@@ -43,8 +43,8 @@ class FlutterPlatformsSlide extends FlutterDeckSlideWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               PlatformCard(
-                image: 'assets/images/platforms/linux.png',
-                label: 'Linux',
+                image: 'assets/images/platforms/web.png',
+                label: 'Web',
               ),
               PlatformCard(
                 image: 'assets/images/platforms/windows.png',
