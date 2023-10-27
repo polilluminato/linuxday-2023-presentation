@@ -14,8 +14,8 @@ class AboutMeSlide extends FlutterDeckSlideWidget {
 
   @override
   FlutterDeckSlide build(BuildContext context) {
-    return FlutterDeckSlide.blank(
-      builder: (context) => FlutterDeckBulletList(
+    return FlutterDeckSlide.split(
+      leftBuilder: (context) => FlutterDeckBulletList(
         useSteps: false,
         items: const [
           'Software Engineer @ Soluzione1',
@@ -23,6 +23,13 @@ class AboutMeSlide extends FlutterDeckSlideWidget {
           'Free Software activist',
           'Linux User',
         ],
+      ),
+      rightBuilder: (context) => FractionallySizedBox(
+        widthFactor: 0.9,
+        child: Image.asset(
+          'assets/me/me.png',
+          fit: BoxFit.contain,
+        ),
       ),
     );
   }
