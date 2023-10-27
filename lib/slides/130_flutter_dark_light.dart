@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:linuxday_2023_presentation/slides/ui/ui_link_row.dart';
 import 'package:linuxday_2023_presentation/styles/dimens.dart';
-import 'package:linuxday_2023_presentation/utils/utils.dart' as utils;
 
 class FlutterDarkLighSlide extends FlutterDeckSlideWidget {
   const FlutterDarkLighSlide()

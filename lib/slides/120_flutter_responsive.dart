@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:linuxday_2023_presentation/slides/ui/ui_link_row.dart';
 import 'package:linuxday_2023_presentation/styles/dimens.dart';
-import 'package:linuxday_2023_presentation/utils/utils.dart' as utils;
 import 'package:wolt_modal_sheet/wolt_modal_sheet.dart';
 
 class FlutterResponsiveSlide extends FlutterDeckSlideWidget {
@@ -65,6 +64,12 @@ class FlutterResponsiveSlide extends FlutterDeckSlideWidget {
                   label: "wolt_responsive_layout_grid",
                   padding: const EdgeInsets.only(top: Dimens.hugePadding * 5),
                   link: "https://pub.dev/packages/wolt_responsive_layout_grid",
+                  textStyle: FlutterDeckTheme.of(context).textTheme.bodyLarge,
+                ),
+                UiLinkRow(
+                  label: "flutter_adaptive_scaffold",
+                  padding: const EdgeInsets.only(top: Dimens.mainPadding),
+                  link: "https://pub.dev/packages/flutter_adaptive_scaffold",
                   textStyle: FlutterDeckTheme.of(context).textTheme.bodyLarge,
                 ),
                 UiLinkRow(
