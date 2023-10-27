@@ -11,7 +11,7 @@
   </p>
 </div>
 
-Le slide della presentazione possono essere trovate al link: [Flutter for the win - Sviluppo Cross Platform alla massima potenza](https://ldmi2023.albertobonacina.com/). 
+Le slide della presentazione possono essere trovate al link: [Flutter for the win - Sviluppo Cross Platform alla massima potenza](https://ldmi2023.albertobonacina.com/).<br>
 La presentazione è stata sviluppata con il package: [flutter_deck](https://pub.dev/packages/flutter_deck) di [Mangirdas Kazlauskas](https://kazlauskas.dev/about-me/).
 
 #### Abstract 
@@ -32,18 +32,23 @@ La presentazione è stata sviluppata con il package: [flutter_deck](https://pub.
 * *simple-flutter-gridview* [[repo](https://github.com/polilluminato/simple-flutter-gridview)]: simple Flutter app to show a responsive gridView
 * *theme-accent-color-switch-flutter* [[repo](https://github.com/polilluminato/theme-accent-color-switch-flutter)]: demo application for managing the switch between dark/light theme and accent color with Riverpod and Flutter
 
-## Package 
+## Packages
 
 * [wolt_modal_sheet](https://pub.dev/packages/wolt_modal_sheet): this package provides a responsive modal with multiple pages, motion animation for page transitions, and scrollable content within each page.
 * [wolt_responsive_layout_grid](https://pub.dev/packages/wolt_responsive_layout_grid): Wolt Responsive Layout Grid library helps you to create dynamic, adaptive grid layouts that seamlessly adjust to various screen sizes.
 * [flutter_staggered_grid_view](https://pub.dev/packages/flutter_staggered_grid_view): provides a collection of Flutter grids layouts (staggered, masonry, quilted, woven, etc.)
 * [window_manager](https://pub.dev/packages/window_manager): this plugin allows Flutter desktop apps to resizing and repositioning the window.
 * [qr_flutter](https://pub.dev/packages/qr_flutter): Flutter library for simple and fast QR code rendering via a Widget or custom painter.
+* [flutter_adaptive_scaffold](https://pub.dev/packages/flutter_adaptive_scaffold): Widgets to easily build adaptive layouts, including navigation elements.
 
 ## 📚 Risorse addizionali
 
 * [Adaptive Apps in Flutter](https://codelabs.developers.google.com/codelabs/flutter-adaptive-app): in questo codelab, imparerete a costruire un'applicazione Flutter che si adatta alla piattaforma su cui viene eseguita, sia essa Android, iOS, web, Windows, macOS o Linux.
 * [Take your Flutter app from boring to beautiful](https://codelabs.developers.google.com/codelabs/flutter-boring-to-beautiful): in questo codelab, si migliora un'applicazione musicale Flutter, trasformandola da noiosa a bella. Per fare ciò, questo codelab utilizza gli strumenti e le API introdotte nel Material 3.
+* [Building an animated responsive app layout with Material 3](https://codelabs.developers.google.com/codelabs/flutter-animated-responsive-layout): in questo codelab si parte da un'applicazione Flutter vuota e si costruisce un'applicazione completamente stilizzata e animata usando Material 3 con Flutter.
+* [Building next generation UIs in Flutter](https://codelabs.developers.google.com/codelabs/flutter-next-gen-uis): in questo codelab, costruirete un'applicazione Flutter che utilizza la potenza delle animazioni, degli shader e dei campi di particelle per creare un'interfaccia utente che evoca quei film di fantascienza e quei programmi televisivi che tutti noi amiamo guardare quando non stiamo programmando.
+* [Write a Flutter desktop application](https://codelabs.developers.google.com/codelabs/flutter-github-client): in questo codelab, costruirete un'applicazione desktop Flutter che acceda alle API di GitHub per recuperare i vostri repository, i problemi assegnati e le richieste di pull. Per realizzare questo compito, creerete e userete dei plugin per interagire con le API native e le applicazioni desktop e userete la generazione di codice per costruire librerie client sicure per le API di GitHub.
+
 
 ## 💎 Contributing
 
