@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
-import 'package:linuxday_2023_presentation/slides/ui/platform_card.dart';
 import 'package:linuxday_2023_presentation/slides/ui/platform_compile.dart';
 import 'package:linuxday_2023_presentation/slides/ui/platform_compile_image.dart';
 
